@@ -1,7 +1,5 @@
 import React, { useState, useEffect } from "react";
-import Link from "next/link";
 import AlignContainer from "./AlignContainer";
-import { Roboto } from "next/font/google";
 
 const NavBar = () => {
   const [menuActive, setMenuActive] = useState(false);
@@ -50,24 +48,22 @@ const NavBar = () => {
       >
         <ul className="space-y-10">
           <li>
-            <Link href="/" className="font-bold text-black">
+            <a href="#" className="font-bold text-black">
               Home
-            </Link>
+            </a>
           </li>
           <li>
-            <Link href="/about" className="font-bold text-black">
+            <a href="#" className="font-bold text-black">
               Job
-            </Link>
+            </a>
           </li>
           <li>
-            <Link href="/pricing" className="font-bold text-black">
+            <a href="#" className="font-bold text-black">
               About Us
-            </Link>
+            </a>
           </li>
           <li>
-            <Link href="/contact" className="font-bold text-black">
-              Contact
-            </Link>
+            <a className="font-bold text-black">Contact</a>
           </li>
           <li>
             <p className="lg:mr-12 md:mr-4 text-white">
