@@ -3,9 +3,9 @@ import AlignContainer from "./AlignContainer";
 
 const SearchJobFilter = () => {
   return (
-    <div className="bg-white p-5 w-min  flex flex-row gap-5 rounded-2xl ">
+    <div className="bg-white md:p-5 p-2 w-min   flex flex-row gap-5 rounded-2xl ">
       <form>
-        <div className="flex flex-row items-center rounded-xl   bg-grey  px-6 py-4 gap-3">
+        <div className="flex flex-row items-center rounded-xl   bg-grey px-6 md:py-4  py-2 gap-3">
           <img src="/icons/search.svg" />
           <input
             type="search"
@@ -14,7 +14,7 @@ const SearchJobFilter = () => {
           />
         </div>
       </form>
-      <div className="flex flex-row items-center rounded-xl bg-grey w-fit pl-6  pr-20 py-4 gap-3">
+      <div className="flex flex-row items-center rounded-xl bg-grey  md:pl-6  md:pr-20 md:py-4 py:2 pr-10 pl-6 gap-3">
         <img src="/icons/location.svg" />
         <select className="outline-none bg-grey" select="">
           <option value="" hidden="hidden">
@@ -26,7 +26,7 @@ const SearchJobFilter = () => {
           <option value="uk">UK</option>
         </select>
       </div>
-      <button className="text-white bg-green outline-none rounded-xl py-4 px-7 font-Poppins font-semibold">
+      <button className="text-white bg-green outline-none rounded-xl md:py-4 md:px-7 py-2 px-3 font-Poppins font-semibold">
         Search
       </button>
     </div>

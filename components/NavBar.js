@@ -1,42 +1,84 @@
 import React, { useState, useEffect } from "react";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
 import AlignContainer from "./AlignContainer";
 
 const NavBar = () => {
+  const pathname = usePathname();
   const [menuActive, setMenuActive] = useState(false);
-
   const handleMobileMenu = () => {
     setMenuActive(!menuActive);
   };
+
   return (
     <>
       <div className="fixed z-10 w-full">
         <AlignContainer>
-          <nav className=" flex-row justify-between items-center w-full pt-12 md:flex hidden  bg-green-400 font-semibold font-Poppins  ">
+          <nav className=" flex-row justify-between items-center w-full pt-12 md:flex hidden  bg-green-400  font-semibold font-Poppins  ">
             <div className="flex flex-row justify-between items-center xl:gap-20 lg:gap-16 md:gap-6">
               <a href="#">
                 <img src="/icons/logo.svg" />
               </a>
               <ul className="flex flex-row xl:gap-14 lg:gap-9 md:gap-4">
                 <li>
-                  <a href="#">Home</a>
+                  <Link
+                    href="/"
+                    className={`link relative font-bold ${
+                      pathname === "/"
+                        ? " after:content-[''] h-10  text-opacity-100  text-black"
+                        : ""
+                    } after:content-[''] after:absolute relative after:h-[3px] after:w-0 after:bg-green after:duration-500
+                     after:left-0 after:bottom-[-10px] before:content-[''] before:absolute  before:h-[3px] before:w-0 before:bg-green before:right-0 before:top-[-10px] before:duration-500 hover:after:w-full hover:before:w-full hover:text-opacity-100 text-opacity-50  text-black`}
+                    // className="after:content-[''] after:absolute relative after:h-[3px] after:w-0 after:bg-green after:duration-500
+                    //  after:left-0 after:bottom-[-10px] before:content-[''] before:absolute  before:h-[3px] before:w-0 before:bg-green before:right-0 before:top-[-10px] before:duration-500 hover:after:w-full hover:before:w-full hover:text-opacity-100 text-opacity-50  text-black "
+                  >
+                    Home
+                  </Link>
                 </li>
                 <li>
-                  <a href="#">Job</a>
+                  <a
+                    href="#"
+                    className="after:content-[''] after:absolute relative after:h-[3px] after:w-0 after:bg-green after:duration-500
+                     after:left-0 after:bottom-[-10px] before:content-[''] before:absolute  before:h-[3px] before:w-0 before:bg-green before:right-0 before:top-[-10px] before:duration-500 hover:after:w-full hover:before:w-full hover:text-opacity-100 text-opacity-50  text-black "
+                  >
+                    Job
+                  </a>
                 </li>
                 <li>
-                  <a href="#">About Us</a>
+                  <a
+                    href="#"
+                    className="after:content-[''] after:absolute relative after:h-[3px] after:w-0 after:bg-green after:duration-500
+                     after:left-0 after:bottom-[-10px] before:content-[''] before:absolute  before:h-[3px] before:w-0 before:bg-green before:right-0 before:top-[-10px] before:duration-500 hover:after:w-full hover:before:w-full hover:text-opacity-100 text-opacity-50  text-black "
+                  >
+                    About Us
+                  </a>
                 </li>
                 <li>
-                  <a href="#">Contact</a>
+                  <a
+                    href="#"
+                    className="after:content-[''] after:absolute relative after:h-[3px] after:w-0 after:bg-green after:duration-500
+                     after:left-0 after:bottom-[-10px] before:content-[''] before:absolute  before:h-[3px] before:w-0 before:bg-green before:right-0 before:top-[-10px] before:duration-500 hover:after:w-full hover:before:w-full hover:text-opacity-100 text-opacity-50  text-black "
+                  >
+                    Contact
+                  </a>
                 </li>
               </ul>
             </div>
             <div className="flex flex-row items-center lg:gap-12 md:gap-4">
               <p className=" text-white">
-                <a href="#">Sign Up</a>
+                <a
+                  href="#"
+                  className="after:content-[''] after:absolute relative after:h-[3px] after:w-0 after:bg-white after:duration-500
+                     after:left-0 after:bottom-[-10px] before:content-[''] before:absolute  before:h-[3px] before:w-0 before:bg-white before:right-0 before:top-[-10px] before:duration-500 hover:after:w-full hover:before:w-full "
+                >
+                  Sign Up
+                </a>
               </p>
-              <div className="flex flex-row items-center bg-white py-3 px-6 rounded-lg gap-3">
-                <img src="/icons/create-account.svg" />
+              <div className="flex flex-row items-center bg-white py-3 px-6 rounded-lg gap-3 group">
+                <img
+                  src="/icons/create-account.svg"
+                  className="group-hover:rotate-[360deg] group-hover:duration-500"
+                />
                 <h1>
                   <a href="#">Create account</a>
                 </h1>

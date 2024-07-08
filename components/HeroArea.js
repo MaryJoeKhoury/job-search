@@ -7,25 +7,28 @@ import BannerMessage from "./BannerMessage";
 const HeroArea = (props) => {
   return (
     <>
-      <NavBar />
-      <div className="mb-4 flex-wrap md:bg-grey bg-[#FBFBFB]">
+      <div className="">
+        {/* <div className="lg:bg-[url('/images/hero.png')] bg-no-repeat bg-center ">/ */}
+        <NavBar />
+        <img
+          src="/images/hero.png"
+          className="w-full md:block hidden absolute top-0 right-0 z-[-1]"
+        />
         <AlignContainer>
-          <div className="flex flex-col md:items-center  md:flex-row">
-            <div className="md:w-9/12 ">
-              <BannerMessage />
-              <SearchJobFilter />
-            </div>
-
-            <div className=" w-full">
-              <img src="/images/hero-image.png" className=" hidden md:block" />
-              <img
-                src="/images/hero-image-mobile.png"
-                className=" block md:hidden w-full mt-4"
-              />
-            </div>
+          <div className="flex flex-col justify-center md:items-start items-center pt-16 md:pt-44 bg-[#FBFBFB] md:bg-opacity-0">
+            <BannerMessage />
+            <SearchJobFilter />
           </div>
         </AlignContainer>
+
+        <div className=" w-full">
+          <img
+            src="/images/hero-image-mobile.png"
+            className=" block md:hidden w-full "
+          />
+        </div>
       </div>
+      {/* </div> */}
     </>
   );
 };
