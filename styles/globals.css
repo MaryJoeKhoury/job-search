@@ -3,6 +3,33 @@
 @tailwind components;
 @tailwind utilities;
 
+@tailwind base;
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px;
+}
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  @media (max-width: 475px) {
+    .xs-alignement {
+      @apply m-auto max-w-sm px-8;
+    }
+  }
+
+  @media (min-width: 640px) and (max-width: 1024px) {
+    .alignement {
+      @apply m-auto max-w-6xl;
+    }
+  }
+
+  @media (max-width: 640px) {
+    .sm-alignement {
+      @apply max-w-sm;
+    }
+  }
+}
 /* :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;

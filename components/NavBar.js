@@ -12,9 +12,9 @@ const NavBar = () => {
 
   return (
     <>
-      <div className="fixed z-10 w-full">
+      <div className="fixed z-10 w-full ">
         <AlignContainer>
-          <nav className=" flex-row justify-between items-center w-full pt-12 md:flex hidden  bg-green-400  font-semibold font-Poppins  ">
+          <nav className=" flex-row justify-between items-center w-full pt-12 md:flex hidden  bg-green-400  font-semibold font-Poppins ">
             <div className="flex flex-row justify-between items-center xl:gap-20 lg:gap-16 md:gap-6">
               <a href="#">
                 <img src="/icons/logo.svg" />
