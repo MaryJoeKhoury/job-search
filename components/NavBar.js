@@ -12,14 +12,14 @@ const NavBar = () => {
 
   return (
     <>
-      <div className="fixed z-10 w-full ">
+      <div className=" w-full ">
         <AlignContainer>
           <nav className=" flex-row justify-between items-center w-full pt-12 md:flex hidden  bg-green-400  font-semibold font-Poppins ">
-            <div className="flex flex-row justify-between items-center xl:gap-20 lg:gap-16 md:gap-6">
+            <div className="flex flex-row justify-between items-center xl:gap-20 lg:gap-16 md:gap-4">
               <a href="#">
                 <img src="/icons/logo.svg" />
               </a>
-              <ul className="flex flex-row xl:gap-14 lg:gap-9 md:gap-4">
+              <ul className="flex flex-row xl:gap-14 lg:gap-9 md:gap-2">
                 <li>
                   <Link
                     href="/"
@@ -64,7 +64,7 @@ const NavBar = () => {
                 </li>
               </ul>
             </div>
-            <div className="flex flex-row items-center lg:gap-12 md:gap-4">
+            <div className="flex flex-row items-center lg:gap-12 md:gap-2">
               <p className=" text-white">
                 <a
                   href="#"
@@ -74,7 +74,7 @@ const NavBar = () => {
                   Sign Up
                 </a>
               </p>
-              <div className="flex flex-row items-center bg-white py-3 px-6 rounded-lg gap-3 group">
+              <div className="flex flex-row items-center bg-white py-3 px-6 rounded-lg z-10 gap-3 group">
                 <img
                   src="/icons/create-account.svg"
                   className="group-hover:rotate-[360deg] group-hover:duration-500"
@@ -87,6 +87,7 @@ const NavBar = () => {
           </nav>
         </AlignContainer>
       </div>
+
       <div
         className={`fixed right-0 top-0 flex h-screen w-full  transform flex-col items-center   bg-green text-center text-2xl md:hidden ${
           menuActive ? "translate-x-0" : "translate-x-full"

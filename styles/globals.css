@@ -18,11 +18,11 @@ html {
     }
   }
 
-  @media (min-width: 640px) and (max-width: 1024px) {
+  /* @media (min-width: 640px) and (max-width: 1024px) {
     .alignement {
       @apply m-auto max-w-6xl;
     }
-  }
+  } */
 
   @media (max-width: 640px) {
     .sm-alignement {
