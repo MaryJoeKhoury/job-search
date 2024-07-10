@@ -12,11 +12,11 @@ html {
 @tailwind utilities;
 
 @layer components {
-  @media (max-width: 475px) {
+  /* @media (max-width: 475px) {
     .xs-alignement {
       @apply m-auto max-w-sm px-8;
     }
-  }
+  } */
 
   /* @media (min-width: 640px) and (max-width: 1024px) {
     .alignement {

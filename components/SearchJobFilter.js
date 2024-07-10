@@ -14,7 +14,7 @@ const SearchJobFilter = () => {
           />
         </div>
       </form>
-      <div className="flex flex-row items-center rounded-xl bg-grey  pl-2 pr-5 py-2 gap-3">
+      <div className="flex flex-row items-center rounded-xl bg-grey  pl-2 pr-16 py-2 gap-3">
         <img src="/icons/location.svg" />
         <select className="outline-none bg-grey" select="">
           <option value="" hidden="hidden">
@@ -26,7 +26,7 @@ const SearchJobFilter = () => {
           <option value="uk">UK</option>
         </select>
       </div>
-      <button className="text-white bg-green outline-none rounded-xl    px-4 py-2 font-Poppins font-semibold">
+      <button className="text-white bg-green outline-none rounded-xl    px-6 py-2 font-Poppins font-semibold">
         Search
       </button>
     </div>
