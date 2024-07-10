@@ -9,7 +9,7 @@ const BannerMessage = () => {
         Search, Find , & Apply
       </h1>
       {/* <p>{props.description}</p> */}
-      <p className="text-lg  sm:text-xl md:mt-8 md:mb-14 mt-6 mb-9  md:w-9/12 ">
+      <p className="text-lg  sm:text-xl md:mt-8 md:mb-14 mt-6 mb-9   ">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
         tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
         veniam.

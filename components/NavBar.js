@@ -28,7 +28,7 @@ const NavBar = () => {
                         ? " after:content-[''] h-10  text-opacity-100  text-black"
                         : ""
                     } after:content-[''] after:absolute relative after:h-[3px] after:w-0 after:bg-green after:duration-500
-                     after:left-0 after:bottom-[-10px] before:content-[''] before:absolute  before:h-[3px] before:w-0 before:bg-green before:right-0 before:top-[-10px] before:duration-500 hover:after:w-full hover:before:w-full hover:text-opacity-100 text-opacity-50  text-black`}
+                     after:left-0 after:bottom-[-10px] before:content-[''] before:absolute  before:h-[3px] before:w-0 before:bg-green before:right-0 before:top-[-10px] before:duration-500 hover:after:w-full hover:before:w-full hover:text-opacity-100   text-black`}
                     // className="after:content-[''] after:absolute relative after:h-[3px] after:w-0 after:bg-green after:duration-500
                     //  after:left-0 after:bottom-[-10px] before:content-[''] before:absolute  before:h-[3px] before:w-0 before:bg-green before:right-0 before:top-[-10px] before:duration-500 hover:after:w-full hover:before:w-full hover:text-opacity-100 text-opacity-50  text-black "
                   >
@@ -39,7 +39,7 @@ const NavBar = () => {
                   <a
                     href="#"
                     className="after:content-[''] after:absolute relative after:h-[3px] after:w-0 after:bg-green after:duration-500
-                     after:left-0 after:bottom-[-10px] before:content-[''] before:absolute  before:h-[3px] before:w-0 before:bg-green before:right-0 before:top-[-10px] before:duration-500 hover:after:w-full hover:before:w-full hover:text-opacity-100 text-opacity-50  text-black "
+                     after:left-0 after:bottom-[-10px] before:content-[''] before:absolute  before:h-[3px] before:w-0 before:bg-green before:right-0 before:top-[-10px] before:duration-500 hover:after:w-full hover:before:w-full hover:text-opacity-100   text-black "
                   >
                     Job
                   </a>
@@ -48,7 +48,7 @@ const NavBar = () => {
                   <a
                     href="#"
                     className="after:content-[''] after:absolute relative after:h-[3px] after:w-0 after:bg-green after:duration-500
-                     after:left-0 after:bottom-[-10px] before:content-[''] before:absolute  before:h-[3px] before:w-0 before:bg-green before:right-0 before:top-[-10px] before:duration-500 hover:after:w-full hover:before:w-full hover:text-opacity-100 text-opacity-50  text-black "
+                     after:left-0 after:bottom-[-10px] before:content-[''] before:absolute  before:h-[3px] before:w-0 before:bg-green before:right-0 before:top-[-10px] before:duration-500 hover:after:w-full hover:before:w-full hover:text-opacity-100 text-black "
                   >
                     About Us
                   </a>
@@ -57,7 +57,7 @@ const NavBar = () => {
                   <a
                     href="#"
                     className="after:content-[''] after:absolute relative after:h-[3px] after:w-0 after:bg-green after:duration-500
-                     after:left-0 after:bottom-[-10px] before:content-[''] before:absolute  before:h-[3px] before:w-0 before:bg-green before:right-0 before:top-[-10px] before:duration-500 hover:after:w-full hover:before:w-full hover:text-opacity-100 text-opacity-50  text-black "
+                     after:left-0 after:bottom-[-10px] before:content-[''] before:absolute  before:h-[3px] before:w-0 before:bg-green before:right-0 before:top-[-10px] before:duration-500 hover:after:w-full hover:before:w-full hover:text-opacity-100  text-black "
                   >
                     Contact
                   </a>
@@ -135,7 +135,7 @@ const NavBar = () => {
         </ul>
       </div>
 
-      <ul className="align-middle md:hidden justify-center items-center py-10  flex bg-[#F2F2F2] px-0 w-full">
+      <ul className="align-middle md:hidden justify-center items-center py-8  flex bg-[#F2F2F2] px-0 w-full">
         <li className="first:mr-auto invisible">invisible</li>
         <li>
           <img src="/icons/logo.svg" />

@@ -43,7 +43,7 @@ export default function Home() {
   return (
     <>
       <HeroArea />
-      <div className="bg-[#FBFBFB]">
+      {/* <div className="bg-[#FBFBFB]">
         <AlignContainer>
           <div className="pt-40 ">
             <div className="flex md:flex-row flex-col items-center justify-between ">
@@ -88,7 +88,7 @@ export default function Home() {
             </div>
           </div>
         </AlignContainer>
-      </div>
+      </div> */}
     </>
   );
 }

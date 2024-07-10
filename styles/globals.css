@@ -24,11 +24,11 @@ html {
     }
   } */
 
-  @media (max-width: 640px) {
+  /* @media (max-width: 640px) {
     .sm-alignement {
       @apply max-w-sm;
     }
-  }
+  } */
 }
 /* :root {
   --foreground-rgb: 0, 0, 0;

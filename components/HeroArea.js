@@ -3,17 +3,19 @@ import AlignContainer from "./AlignContainer";
 import NavBar from "./NavBar";
 import SearchJobFilter from "./SearchJobFilter";
 import BannerMessage from "./BannerMessage";
-
+import Statistics from "../components/svgs/Statistics";
+import SearchFolder from "./svgs/SearchFolder";
+import Shield from "./svgs/Shield";
 const HeroArea = (props) => {
   return (
     <>
       {/* <div className="mb-4 md:bg-grey bg-[#FBFBFB]"> */}
-      <div className="xl:bg-[linear-gradient(90deg,_#F2F2F2_61%,_#00CC99_0)] bg-[linear-gradient(180deg,_#FBFBFB_55%,_#00CC99_0)] 3xl:bg-[linear-gradient(90deg,_#F2F2F2_58%,_#00CC99_0)] md:bg-[linear-gradient(90deg,_#F2F2F2_85%,_#00CC99_0)]">
+      <div className="xl:bg-[linear-gradient(90deg,_#F2F2F2_61%,_#00CC99_0)] xs:bg-[linear-gradient(180deg,_#FBFBFB_50%,_#00CC99_0)] bg-[linear-gradient(180deg,_#FBFBFB_50%,_#00CC99_0)]  3xl:bg-[linear-gradient(90deg,_#F2F2F2_58%,_#00CC99_0)] md:bg-[linear-gradient(90deg,_#F2F2F2_85%,_#00CC99_0)]">
         <NavBar />
         <AlignContainer>
-          <div className="flex flex-col items-center lg:gap-2 xl:gap-16 gap-96 md:gap-2 md:items-start md:flex-row ">
-            <div className=" mt-44 w-9/12">
-              <div className="flex flex-col justify-between">
+          <div className="flex flex-col items-center  lg:gap-16 gap-72 md:gap-2 md:items-start md:flex-row ">
+            <div className=" md:mt-44 mt-24  ">
+              <div className="flex flex-col justify-between items-center md:items-start">
                 <div>
                   <BannerMessage />
                 </div>
@@ -23,27 +25,16 @@ const HeroArea = (props) => {
               </div>
             </div>
 
-            <div className=" w-full flex flex-row md:items-center lg:gap-0 gap-32 xl:gap-52 md:gap-4 mt-[-6rem]  justify-around md:justify-between md:bg-opacity-100 md:bg-green items-start md:rounded-bl-[50px]">
-              <div className="flex flex-col lg:gap-52 gap-24 md:gap-96 ">
-                <div>
-                  <img
-                    src="/icons/search-folder.svg"
-                    className="bg-white lg:p-6 rounded-xl md:mt-40 p-3 md:ml-8 ml-10 rotate-[-4deg]"
-                  />
-                </div>
-                <div>
-                  <img
-                    src="/icons/shield.svg"
-                    className="bg-white lg:p-6 p-3 rounded-xl  lg:mb-44 mb-44 md:mb-20 ml-4 rotate-[-4deg]"
-                  />
-                </div>
+            <div className=" w-full  mt-[-6rem]  justify-around md:justify-between md:bg-opacity-100 md:bg-green items-start md:rounded-bl-[50px]">
+              <div className="bg-white w-fit  p-4 rounded-lg  md:mt-72 xl:ml-[30rem] lg:ml-[19rem]  md:ml-52 rotate-3 xs:mt-8 xs:ml-96 ml-60  ">
+                <Statistics />
               </div>
-              {/* <div> */}
-              <img
-                src="/icons/statistic.svg"
-                className="bg-white lg:p-6 p-3 rounded-xl rotate-6 mt-10"
-              />
-              {/* </div> */}
+              <div className="bg-white w-fit p-4 rounded-lg -rotate-[4deg]  lg:ml-24 md:-mt-40 md:ml-16 xs:-mt-52 xs:ml-24 -mt-44 ml-10 ">
+                <SearchFolder />
+              </div>
+              <div className="bg-white w-fit  p-4 rounded-lg lg:ml-16 md:mt-44 -rotate-[5deg] mb-44 md:ml-10 xs:mt-36 xs:ml-14 mt-36 ml-8 ">
+                <Shield />
+              </div>
             </div>
           </div>
         </AlignContainer>
