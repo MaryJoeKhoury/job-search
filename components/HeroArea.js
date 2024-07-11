@@ -26,7 +26,7 @@ const HeroArea = (props) => {
             </div>
 
             <div className=" lg:w-2/5 md:w-1/4  w-full  md:mt-[-6rem]    justify-around md:justify-between md:bg-opacity-100 md:bg-green items-start md:rounded-bl-3xl">
-              <div className="bg-white w-fit  p-4 rounded-lg  md:mt-72    rotate-6 mt-56 ml-auto sm:ml-96  ">
+              <div className="bg-white w-fit  p-4 rounded-lg  md:mt-72    rotate-6 mt-56 ml-auto  ">
                 <Statistics />
               </div>
               <div className="bg-white w-fit p-4 rounded-lg -rotate-[4deg]  lg:ml-24 md:-mt-40 md:ml-4 -mt-32 ml-12 ">
