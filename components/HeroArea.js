@@ -10,7 +10,7 @@ const HeroArea = (props) => {
   return (
     <>
       {/* <div className="mb-4 md:bg-grey bg-[#FBFBFB]"> */}
-      <div className=" 3xl:bg-[linear-gradient(90deg,_#FBFBFB_65%,_#00CC99_0)] md:bg-[linear-gradient(90deg,_#FBFBFB_60%,_#00CC99_0)] bg-[linear-gradient(180deg,_#FBFBFB_50%,_#00CC99_0)] ">
+      <div className=" 3xl:bg-[linear-gradient(90deg,_#F2F2F2_65%,_#00CC99_0)] md:bg-[linear-gradient(90deg,_#F2F2F2_60%,_#00CC99_0)] bg-[linear-gradient(180deg,_#FBFBFB_50%,_#00CC99_0)] ">
         <NavBar />
         <AlignContainer>
           <div className="flex flex-col items-center   md:items-start md:flex-row ">
