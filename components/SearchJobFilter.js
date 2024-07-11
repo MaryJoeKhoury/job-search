@@ -3,10 +3,9 @@ import AlignContainer from "./AlignContainer";
 
 const SearchJobFilter = () => {
   return (
-    <div className="bg-white  md:p-4 p-2 w-min  font-Poppins xs:text-md flex  flex-row lg:gap-5 gap-1 rounded-2xl ">
+    <div className="bg-white md:p-4 p-2 w-min  font-Poppins xs:text-md flex text-sm flex-row lg:gap-5 gap-1 rounded-2xl ">
       <form>
-        {/* <div className="flex flex-row items-center rounded-xl  pl-2 pr-5 py-2 bg-grey  gap-3 "> */}
-        <div className="flex flex-row text-sm items-center font-semiBold font-Poppins text-black p-2 bg-grey  gap-1 rounded-lg">
+        <div className="flex flex-row items-center rounded-xl  md:pl-2 md:pr-5 md:py-2 bg-grey  md:gap-3 gap-1  p-2">
           <div className="w-4">
             <img src="/icons/search.svg" />
           </div>
@@ -14,18 +13,20 @@ const SearchJobFilter = () => {
             <input
               type="search"
               placeholder="Job title or Keyword"
-              className="bg-grey w-[130px] outline-none rounded-sm text-[12px]"
+              className="bg-grey md:w-[175px] w-[125px] md:text-[1rem] text-[11px] outline-none"
             />
           </div>
         </div>
       </form>
-      {/* <div className="flex flex-row items-center rounded-xl bg-grey  pl-2 pr-16 py-2 gap-3"> */}
-      <div className="flex flex-row text-sm items-center font-semiBold font-Poppins text-black bg-grey  gap-1 rounded-lg">
+      <div className="flex flex-row items-center rounded-xl bg-grey  pl-2 md:pr-5 py-2 pr-2 md:gap-3 gap-1">
         <div className="w-4">
           <img src="/icons/location.svg" />
         </div>
         <div>
-          <select className="outline-none bg-grey text-[12px]" select="">
+          <select
+            className="outline-none bg-grey md:text-[1rem] text-[11px] "
+            select=""
+          >
             <option value="" hidden="hidden">
               Location
             </option>
@@ -36,8 +37,8 @@ const SearchJobFilter = () => {
           </select>
         </div>
       </div>
-      {/* <button className="text-white bg-green outline-none rounded-xl    px-6 py-2 font-Poppins font-semibold"> */}
-      <button className="text-white bg-green outline-none rounded-xl   text-[12px] px-4 py-2 font-Poppins font-semibold">
+      <button className="text-white bg-green outline-none rounded-xl md:text-[1rem] text-[11px]    px-4 py-2 font-Poppins font-semibold">
+        {/* <button className="text-white bg-green outline-none rounded-xl   text-[12px] px-4 py-2 font-Poppins font-semibold"> */}
         Search
       </button>
     </div>
