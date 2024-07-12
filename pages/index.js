@@ -14,28 +14,28 @@ const cardInfo = [
     icon: "/icons/register.svg",
     title: "Register",
     description:
-      " Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore .",
+      " Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.",
   },
   {
     id: 2,
     icon: "/icons/resume.svg",
     title: "Create a Resume",
     description:
-      " Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore .",
+      " Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.",
   },
   {
     id: 3,
     icon: "/icons/search-folder.svg",
     title: "Find Job",
     description:
-      " Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore .",
+      " Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.",
   },
   {
     id: 4,
     icon: "/icons/apply-job.svg",
     title: "Apply Job",
     description:
-      " Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore .",
+      " Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.",
   },
 ];
 
@@ -43,7 +43,7 @@ export default function Home() {
   return (
     <>
       <HeroArea />
-      <div className="bg-[#FBFBFB] pb-36">
+      <div className="bg-[#fbfbfb] pb-36">
         <AlignContainer>
           <div className="pt-40 ">
             <div className="flex md:flex-row flex-col items-center justify-between ">
@@ -54,7 +54,7 @@ export default function Home() {
                   eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
                   minim veniam."
                   aligntext="text-start"
-                  padding="md:pr-16"
+                  padding="lg:pr-40"
                 />
               </div>
               <div className=" md:block hidden">
@@ -71,7 +71,7 @@ export default function Home() {
               />
             ))}
           </CardContainer>
-          <div className=" block md:hidden">
+          <div className=" block md:hidden w-fit mx-auto mt-8">
             <Button content="Learn More" />
           </div>
           <div className="flex md:flex-row flex-col items-center gap-16 mt-36">

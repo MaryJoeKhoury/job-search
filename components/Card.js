@@ -12,7 +12,7 @@ export const Card = (props) => {
           {props.title}
         </h1>
       </div>
-      <div className="text-start text-sm text-[#8A8A8A] md:pr-14">
+      <div className="text-start text-sm text-[#8A8A8A] md::pr-14  pr-4">
         <p>{props.description}</p>
       </div>
     </Cards>
