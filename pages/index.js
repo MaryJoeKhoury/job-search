@@ -13,6 +13,7 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 import { Pagination, Navigation } from "swiper/modules";
+import JobCard from "@/components/JobCard";
 
 const howItWorksInfo = [
   {
@@ -86,8 +87,41 @@ const jobCategoriesInfo = [
     backgroundColor:"bg-white",
     padding:"pt-4 pb-8 xs:pr-20"
   },
+ 
 ];
 
+
+const jobInfo = [
+  {
+    id: 1,
+    icon: "/icons/red-logo.svg",
+    title: "UI/UX Designer",
+    subtitle:"Dimension Studio",
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.Lorem ipsum dolor sit amet.",
+    backgroundColor:"bg-green",
+    // padding:"pt-4 pb-8 xs:pr-12"
+  },
+  {
+    id: 2,
+    icon: "/icons/blue-logo.svg",
+    title: "Full Stack Developer",
+    subtitle:"Alpander",
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.Lorem ipsum dolor sit amet.",
+    backgroundColor:"bg-white",
+    // padding:"pt-4 pb-8 xs:pr-12"
+  },
+  {
+    id: 3,
+    icon: "/icons/green-logo.svg",
+    title: "Product Designer",
+    subtitle:"XReact Tech",
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.Lorem ipsum dolor sit amet.",
+    backgroundColor:"bg-white",
+    padding:"pt-4 pb-8 xs:pr-28"
+  },
+ 
+ 
+];
 export default function Home() {
   const [swiperRef, setSwiperRef] = useState(null);
 
@@ -158,7 +192,7 @@ export default function Home() {
                           tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
                           veniam.Lorem ipsum dolor sit amet."
             aligntext="text-center"
-            padding="md:px-56"
+            padding="xl:px-56"
           />
           <Swiper
             slidesPerView={4}
@@ -187,17 +221,17 @@ export default function Home() {
                 spaceBetween: 260,
               },
               1024:{
-                slidesPerView:5,
+                slidesPerView:4,
                 spaceBetween:260,
               },
               1280: {
-                slidesPerView: 5,
+                slidesPerView: 4,
                 spaceBetween: 250,
-                
+              
               },
             }}
           >
-            <CardContainer width="w-[70%]">
+            <CardContainer >
               {jobCategoriesInfo.map((info) => (
                 <SwiperSlide>
                   <Card
@@ -218,7 +252,33 @@ export default function Home() {
           </div>
         </AlignContainer>
       </section>
-      
+      <section className="bg-[#FBFBFB] pt-36">
+        <AlignContainer>
+        <SectionTitle title="Recently Added" aligntext="text-center"/>
+        <SectionSubtitle
+            subtitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                          veniam.Lorem ipsum dolor sit amet."
+            aligntext="text-center"
+            padding="xl:px-56"
+          />
+           <CardContainer>
+            {jobInfo.map((info) => (
+              <JobCard
+                icon={info.icon}
+                title={info.title}
+                subtitle={info.subtitle}
+                description={info.description}
+                backgroundColor="bg-white"
+                width="xl:w-1/4 lg:w-[30%]  md:w-2/5 xs:w-[49%] w-[155px]"
+              />
+            ))}
+          </CardContainer>
+          <div className="w-fit m-auto mt-12">
+            <Button content="View More"/>
+          </div>
+          </AlignContainer>
+      </section>
     </>
   );
 }
