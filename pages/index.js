@@ -130,7 +130,7 @@ export default function Home() {
       <HeroArea />
       <section className="bg-[#fbfbfb] pb-28">
         <AlignContainer>
-          <div className="pt-40">
+          <div className="pt-28 md:pt-40">
             <div className="flex flex-col items-center justify-between md:flex-row">
               <div className="w-full md:w-[70%] lg:w-9/12">
                 <SectionTitle title="How it works" aligntext="text-start" />
@@ -154,7 +154,7 @@ export default function Home() {
                 title={info.title}
                 description={info.description}
                 backgroundColor="bg-white"
-                width="xl:w-1/4 lg:w-[30%]  md:w-2/5 xs:w-[49%] w-[155px]"
+                width="xl:w-1/4 lg:w-[30%]  md:w-2/5  w-full"
               />
             ))}
           </CardContainer>

@@ -4,7 +4,7 @@ import AlignContainer from "./AlignContainer";
 const BannerMessage = () => {
   return (
     <div className="text-center font-Poppins md:text-left">
-      <h1 className="text-3xl font-bold sm:text-[2.75rem] xl:text-5xl">
+      <h1 className="text-3xl font-bold sm:text-4xl xl:text-5xl">
         {/* {props.slogan} */}
         Search, Find , & Apply
       </h1>

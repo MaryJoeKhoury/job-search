@@ -1,7 +1,7 @@
 import React from "react";
 const CardContainer = (props) => {
   return (
-    <div className="mt-4 flex cursor-pointer flex-row flex-wrap justify-between gap-2 align-middle xl:flex-nowrap">
+    <div className="flex cursor-pointer flex-row flex-wrap justify-between gap-8 align-middle xl:flex-nowrap">
       {props.children}
     </div>
   );
