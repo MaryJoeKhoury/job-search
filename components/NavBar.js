@@ -72,7 +72,7 @@ const NavBar = () => {
               <div className="group z-10 flex flex-row items-center gap-3 rounded-lg bg-white px-6 py-3">
                 <img
                   src="/icons/create-account.svg"
-                  // className="group-hover:rotate-[360deg] group-hover:duration-500"
+                  // className="group-hover:p group-hover:duration-500"
                 />
                 <h1>
                   <a href="#">Create account</a>
