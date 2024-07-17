@@ -3,7 +3,7 @@ import AlignContainer from "./AlignContainer";
 
 const SearchJobFilter = () => {
   return (
-    <div className="flex w-full flex-col flex-wrap gap-4 rounded-2xl bg-white p-5 font-Poppins text-sm xs:text-sm sm:p-4 md:flex-row md:flex-nowrap md:gap-1 md:p-2 lg:gap-5 lg:p-4">
+    <div className="flex w-fit flex-col flex-wrap gap-4 rounded-2xl bg-white font-Poppins text-sm xs:text-sm sm:p-4 md:flex-row md:flex-nowrap md:gap-1 md:p-2 lg:gap-5 lg:p-4">
       <form>
         <div className="flex flex-row items-center gap-1 rounded-xl bg-[#F9F9F9] p-2 sm:gap-3 sm:py-2 sm:pl-2 sm:pr-8 md:gap-2 md:py-2 md:pl-1 md:pr-0 lg:gap-3 lg:py-2 lg:pl-2 lg:pr-8 xl:pr-12">
           <div className="w-4">
