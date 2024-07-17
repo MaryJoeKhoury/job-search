@@ -121,6 +121,7 @@ const jobInfo = [
     padding: "pr-2",
   },
 ];
+
 export default function Home() {
   const [swiperRef, setSwiperRef] = useState(null);
 
@@ -180,6 +181,7 @@ export default function Home() {
           </div>
         </AlignContainer>
       </section>
+
       <section className="bg-[#00CC99] bg-opacity-5 py-28">
         <AlignContainer>
           <SectionTitle
@@ -249,7 +251,8 @@ export default function Home() {
           </div>
         </AlignContainer>
       </section>
-      <section className="bg-[#FBFBFB] pt-36">
+
+      <section className="bg-[#FBFBFB] pb-16 pt-36">
         <AlignContainer>
           <SectionTitle title="Recently Added" aligntext="text-center" />
           <SectionSubtitle
@@ -313,6 +316,13 @@ export default function Home() {
           <div className="m-auto mt-12 w-fit">
             <Button content="View More" />
           </div>
+        </AlignContainer>
+      </section>
+
+      <section className="bg-[#fbfbfb] pt-16">
+        <AlignContainer>
+          <SectionTitle title="People's Feedback about JobNow!" />
+          {/* <SectionSubtitle subtitle=" Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore ex." /> */}
         </AlignContainer>
       </section>
     </>

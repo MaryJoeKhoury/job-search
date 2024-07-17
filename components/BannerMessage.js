@@ -3,13 +3,13 @@ import AlignContainer from "./AlignContainer";
 
 const BannerMessage = () => {
   return (
-    <div className=" text-center md:text-left ">
-      <h1 className="text-3xl font-bold sm:text-5xl  ">
+    <div className="text-center font-Poppins md:text-left">
+      <h1 className="text-3xl font-bold sm:text-4xl lg:text-5xl">
         {/* {props.slogan} */}
         Search, Find , & Apply
       </h1>
       {/* <p>{props.description}</p> */}
-      <p className="text-md  sm:text-xl md:mt-12 md:mb-14 mt-6 mb-9 md:pr-24  3xl:pr-96  px-1">
+      <p className="text-md 3xl:pr-96 mb-9 mt-6 px-1 sm:text-xl md:mb-14 md:mt-12 md:pr-24">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
         tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
         veniam.
