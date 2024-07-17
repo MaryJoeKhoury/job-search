@@ -2,7 +2,7 @@ import React from "react";
 
 const Button = (props) => {
   return (
-    <button className="border-green border-2 w-fit border-solid rounded-lg px-8 py-3 font-Poppins font-semibold text-green text-lg">
+    <button className="w-fit rounded-lg border-2 border-solid border-green px-8 py-3 font-Poppins text-lg font-semibold text-green">
       <p>{props.content}</p>
     </button>
   );

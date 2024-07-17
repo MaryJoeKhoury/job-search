@@ -12,23 +12,22 @@ const NavBar = () => {
 
   return (
     <>
-      <div className=" w-full ">
+      <div className="w-full">
         <AlignContainer>
-          <nav className=" flex-row justify-between items-center w-full pt-12 md:flex hidden  bg-green-400  font-semibold font-Poppins ">
-            <div className="flex flex-row justify-between items-center xl:gap-20 lg:gap-16 md:gap-4">
+          <nav className="bg-green-400 hidden w-full flex-row items-center justify-between pt-12 font-Poppins font-semibold md:flex">
+            <div className="flex flex-row items-center justify-between md:gap-4 lg:gap-16 xl:gap-20">
               <a href="#">
                 <img src="/icons/logo.svg" />
               </a>
-              <ul className="flex flex-row xl:gap-14 lg:gap-9 md:gap-2">
+              <ul className="flex flex-row md:gap-2 lg:gap-9 xl:gap-14">
                 <li>
                   <Link
                     href="/"
                     className={`link relative font-bold ${
                       pathname === "/"
-                        ? " after:content-[''] h-10  text-opacity-100  text-black"
+                        ? "h-10 text-black text-opacity-100 after:content-['']"
                         : ""
-                    } after:content-[''] after:absolute relative after:h-[3px] after:w-0 after:bg-green after:duration-500
-                     after:left-0 after:bottom-[-10px] before:content-[''] before:absolute  before:h-[3px] before:w-0 before:bg-green before:right-0 before:top-[-10px] before:duration-500 hover:after:w-full hover:before:w-full hover:text-opacity-100   text-black`}
+                    } relative text-black before:absolute before:right-0 before:top-[-10px] before:h-[3px] before:w-0 before:bg-green before:duration-500 before:content-[''] after:absolute after:bottom-[-10px] after:left-0 after:h-[3px] after:w-0 after:bg-green after:duration-500 after:content-[''] hover:text-opacity-100 hover:before:w-full hover:after:w-full`}
                     // className="after:content-[''] after:absolute relative after:h-[3px] after:w-0 after:bg-green after:duration-500
                     //  after:left-0 after:bottom-[-10px] before:content-[''] before:absolute  before:h-[3px] before:w-0 before:bg-green before:right-0 before:top-[-10px] before:duration-500 hover:after:w-full hover:before:w-full hover:text-opacity-100 text-opacity-50  text-black "
                   >
@@ -38,8 +37,7 @@ const NavBar = () => {
                 <li>
                   <a
                     href="#"
-                    className="after:content-[''] after:absolute relative after:h-[3px] after:w-0 after:bg-green after:duration-500
-                     after:left-0 after:bottom-[-10px] before:content-[''] before:absolute  before:h-[3px] before:w-0 before:bg-green before:right-0 before:top-[-10px] before:duration-500 hover:after:w-full hover:before:w-full hover:text-opacity-100   text-black "
+                    className="relative text-black before:absolute before:right-0 before:top-[-10px] before:h-[3px] before:w-0 before:bg-green before:duration-500 before:content-[''] after:absolute after:bottom-[-10px] after:left-0 after:h-[3px] after:w-0 after:bg-green after:duration-500 after:content-[''] hover:text-opacity-100 hover:before:w-full hover:after:w-full"
                   >
                     Job
                   </a>
@@ -47,8 +45,7 @@ const NavBar = () => {
                 <li>
                   <a
                     href="#"
-                    className="after:content-[''] after:absolute relative after:h-[3px] after:w-0 after:bg-green after:duration-500
-                     after:left-0 after:bottom-[-10px] before:content-[''] before:absolute  before:h-[3px] before:w-0 before:bg-green before:right-0 before:top-[-10px] before:duration-500 hover:after:w-full hover:before:w-full hover:text-opacity-100 text-black "
+                    className="relative text-black before:absolute before:right-0 before:top-[-10px] before:h-[3px] before:w-0 before:bg-green before:duration-500 before:content-[''] after:absolute after:bottom-[-10px] after:left-0 after:h-[3px] after:w-0 after:bg-green after:duration-500 after:content-[''] hover:text-opacity-100 hover:before:w-full hover:after:w-full"
                   >
                     About Us
                   </a>
@@ -56,25 +53,23 @@ const NavBar = () => {
                 <li>
                   <a
                     href="#"
-                    className="after:content-[''] after:absolute relative after:h-[3px] after:w-0 after:bg-green after:duration-500
-                     after:left-0 after:bottom-[-10px] before:content-[''] before:absolute  before:h-[3px] before:w-0 before:bg-green before:right-0 before:top-[-10px] before:duration-500 hover:after:w-full hover:before:w-full hover:text-opacity-100  text-black "
+                    className="relative text-black before:absolute before:right-0 before:top-[-10px] before:h-[3px] before:w-0 before:bg-green before:duration-500 before:content-[''] after:absolute after:bottom-[-10px] after:left-0 after:h-[3px] after:w-0 after:bg-green after:duration-500 after:content-[''] hover:text-opacity-100 hover:before:w-full hover:after:w-full"
                   >
                     Contact
                   </a>
                 </li>
               </ul>
             </div>
-            <div className="flex flex-row items-center lg:gap-12 md:gap-2">
-              <p className=" text-white">
+            <div className="flex flex-row items-center md:gap-2 lg:gap-12">
+              <p className="text-white">
                 <a
                   href="#"
-                  className="after:content-[''] after:absolute relative after:h-[3px] after:w-0 after:bg-white after:duration-500
-                     after:left-0 after:bottom-[-10px] before:content-[''] before:absolute  before:h-[3px] before:w-0 before:bg-white before:right-0 before:top-[-10px] before:duration-500 hover:after:w-full hover:before:w-full "
+                  className="relative before:absolute before:right-0 before:top-[-10px] before:h-[3px] before:w-0 before:bg-white before:duration-500 before:content-[''] after:absolute after:bottom-[-10px] after:left-0 after:h-[3px] after:w-0 after:bg-white after:duration-500 after:content-[''] hover:before:w-full hover:after:w-full"
                 >
                   Sign Up
                 </a>
               </p>
-              <div className="flex flex-row items-center bg-white py-3 px-6 rounded-lg z-10 gap-3 group">
+              <div className="group z-10 flex flex-row items-center gap-3 rounded-lg bg-white px-6 py-3">
                 <img
                   src="/icons/create-account.svg"
                   // className="group-hover:rotate-[360deg] group-hover:duration-500"
@@ -89,14 +84,14 @@ const NavBar = () => {
       </div>
 
       <div
-        className={`fixed right-0 top-0 flex h-screen w-full  transform flex-col items-center   bg-green text-center text-2xl md:hidden ${
+        className={`fixed right-0 top-0 flex h-screen w-full transform flex-col items-center bg-green text-center text-2xl md:hidden ${
           menuActive ? "translate-x-0" : "translate-x-full"
         } z-10 transition-transform duration-300 ease-in-out`}
       >
         <li className="ml-auto mr-7 list-none">
           <img
             src="/icons/close.svg "
-            className="w-8 ml-auto py-10 "
+            className="ml-auto w-8 py-10"
             onClick={handleMobileMenu}
           />
         </li>
@@ -125,7 +120,7 @@ const NavBar = () => {
             </p>
           </li>
           <li>
-            <div className="flex flex-row items-center bg-white py-3 px-6 rounded-lg gap-3">
+            <div className="flex flex-row items-center gap-3 rounded-lg bg-white px-6 py-3">
               <img src="/icons/create-account.svg" />
               <h1>
                 <a href="#">Create account</a>
@@ -135,22 +130,22 @@ const NavBar = () => {
         </ul>
       </div>
 
-      <ul className="align-middle md:hidden justify-center items-center py-8  flex bg-[#F2F2F2] px-0 w-full">
-        <li className="first:mr-auto invisible">invisible</li>
+      <ul className="flex w-full items-center justify-center bg-[#F2F2F2] px-0 py-8 align-middle md:hidden">
+        <li className="invisible first:mr-auto">invisible</li>
         <li>
           <img src="/icons/logo.svg" />
         </li>
-        <li className="last:ml-auto mr-4">
+        <li className="mr-4 last:ml-auto">
           {/* <button className="fixed right-0  bg-green rounded-md top-0 z-20 px-4  my-7 mr-7  xs:m-10 md:hidden"> */}
-          <button className="   rounded-md bg-green p-3   md:hidden">
+          <button className="rounded-md bg-green p-3 md:hidden">
             <div
-              className={` relative   cursor-pointer ${
+              className={`relative cursor-pointer ${
                 menuActive ? "active" : ""
               }`}
               id="ham-menu"
               onClick={handleMobileMenu}
             >
-              <img src="/icons/navigation.svg " className="w-7 ml-auto " />
+              <img src="/icons/navigation.svg " className="ml-auto w-7" />
             </div>
           </button>
         </li>
