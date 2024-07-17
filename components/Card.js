@@ -4,7 +4,7 @@ import Cards from "./Cards";
 export const Card = (props) => {
   return (
     <div
-      className={`mt-12 flex flex-col items-start justify-center gap-2 rounded-3xl px-4 py-8 text-center font-Poppins ${props.backgroundColor} ${props.width} `}
+      className={`mt-12 flex cursor-pointer flex-col items-start justify-center gap-2 rounded-3xl px-4 py-8 text-center font-Poppins ${props.backgroundColor} ${props.width} `}
     >
       <div className="w-7 md:w-10">
         <img src={props.icon} />

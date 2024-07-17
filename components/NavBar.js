@@ -66,7 +66,7 @@ const NavBar = () => {
                   href="#"
                   className="relative before:absolute before:right-0 before:top-[-10px] before:h-[3px] before:w-0 before:bg-white before:duration-500 before:content-[''] after:absolute after:bottom-[-10px] after:left-0 after:h-[3px] after:w-0 after:bg-white after:duration-500 after:content-[''] hover:before:w-full hover:after:w-full"
                 >
-                  Sign Up
+                  Sign In
                 </a>
               </p>
               <div className="group z-10 flex flex-row items-center gap-3 rounded-lg bg-white px-6 py-3">
@@ -116,7 +116,7 @@ const NavBar = () => {
           </li>
           <li>
             <p className="text-white">
-              <a href="#">Sign Up</a>
+              <a href="#">Sign In</a>
             </p>
           </li>
           <li>

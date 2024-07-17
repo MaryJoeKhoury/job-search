@@ -25,11 +25,11 @@ const HeroArea = (props) => {
               </div>
             </div>
 
-            <div className="w-full items-start justify-around md:-mt-48 md:w-2/5 md:justify-between md:rounded-bl-[50px] md:bg-green md:bg-opacity-100">
+            <div className="w-full items-start justify-around md:-mt-24 md:w-2/5 md:justify-between md:rounded-bl-[50px] md:bg-green md:bg-opacity-100">
               <div className="ml-auto mt-56 flex h-20 w-20 rotate-6 items-center justify-center rounded-lg bg-white p-4 md:mt-72">
                 <Statistics />
               </div>
-              <div className="-mt-32 ml-12 flex h-20 w-20 -rotate-[4deg] items-center justify-center rounded-lg bg-white p-4 md:-mt-40 md:ml-4 lg:ml-24">
+              <div className="-mt-32 ml-12 flex h-20 w-20 -rotate-[4deg] items-center justify-center rounded-lg bg-white p-4 md:-mt-48 md:ml-4 lg:ml-24">
                 <SearchFolder />
               </div>
               <div className="mb-44 ml-8 mt-48 flex h-20 w-20 -rotate-[5deg] items-center justify-center rounded-lg bg-white p-4 md:ml-2 md:mt-44 lg:ml-16">

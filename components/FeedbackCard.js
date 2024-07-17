@@ -7,7 +7,7 @@ const FeedbackCard = (props) => {
       <SectionSubtitle subtitle={props.subtitle} />
       <div>
         <p>{props.description}</p>
-        <img />
+        <img src={props.image} />
       </div>
     </div>
   );

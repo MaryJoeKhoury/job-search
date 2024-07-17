@@ -3,7 +3,7 @@ import React from "react";
 const JobCard = (props) => {
   return (
     <div
-      className={`mt-12 flex flex-col items-start justify-center gap-5 rounded-3xl px-4 py-8 text-center font-Poppins ${props.backgroundColor} ${props.width} `}
+      className={`mt-12 flex cursor-pointer flex-col items-start justify-center gap-5 rounded-3xl px-4 py-8 text-center font-Poppins ${props.backgroundColor} ${props.width} `}
     >
       <div className="h-14 w-16 md:h-20 md:min-w-20">
         <img src={props.icon} />
