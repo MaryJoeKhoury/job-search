@@ -14,6 +14,8 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 import { Pagination, Navigation } from "swiper/modules";
 import JobCard from "@/components/JobCard";
+import FeedbackCard from "@/components/FeedbackCard";
+import Footer from "@/components/Footer";
 
 const howItWorksInfo = [
   {
@@ -122,6 +124,7 @@ const jobInfo = [
   },
 ];
 
+const feedbackInfo = [];
 export default function Home() {
   const [swiperRef, setSwiperRef] = useState(null);
 
@@ -133,7 +136,11 @@ export default function Home() {
           <div className="pt-28 md:pt-40">
             <div className="flex flex-col items-center justify-between md:flex-row">
               <div className="w-full md:w-[70%] lg:w-9/12">
-                <SectionTitle title="How it works" aligntext="text-start" />
+                <SectionTitle
+                  title="How it works"
+                  aligntext="text-start"
+                  // fontSize="sm:text-3xl"
+                />
                 <SectionSubtitle
                   subtitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                   eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
@@ -161,21 +168,24 @@ export default function Home() {
           <div className="mx-auto mt-8 block w-fit md:hidden">
             <Button content="Learn More" />
           </div>
-          <div className="mt-36 flex flex-col items-center gap-16 md:flex-row">
-            <div className="md:w-1/2">
-              <img src="/images/grey.png" className="w-full" />
+          <div className="mt-12 flex flex-col items-center gap-16 md:mt-36 md:flex-row">
+            <div className="w-fit">
+              <img src="/images/grey.png" />
             </div>
-            <div className="flex flex-col items-center md:w-1/2 md:items-start">
+            <div className="flex flex-col items-center md:w-3/5 md:items-start">
               <SectionTitle
                 title="We will help you to become an employee in your dream company"
                 aligntext="md:text-left text-center "
+                fontSize="xl:text-4xl md:text-2xl"
               />
-              <SectionSubtitle
-                subtitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-                          veniam."
-                aligntext="md:text-left text-center"
-              />
+
+              <p
+                className={`mb-9 mt-8 text-center font-Poppins text-sm text-[#8A8A8A] md:text-left md:text-lg lg:pr-11`}
+              >
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam.
+              </p>
               <Button content="Learn More" />
             </div>
           </div>
@@ -187,13 +197,14 @@ export default function Home() {
           <SectionTitle
             title="Popular Job Categories"
             aligntext="text-center"
+            // fontSize="sm:text-3xl"
           />
           <SectionSubtitle
             subtitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
                           tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
                           veniam.Lorem ipsum dolor sit amet."
             aligntext="text-center"
-            padding="xl:px-56"
+            padding="xl:px-48"
           />
           <Swiper
             // slidesPerView={4}
@@ -261,6 +272,7 @@ export default function Home() {
                           veniam.Lorem ipsum dolor sit amet."
             aligntext="text-center"
             padding="xl:px-56"
+            // fontSize="sm:text-3xl"
           />
           <Swiper
             // slidesPerView={4}
@@ -323,8 +335,16 @@ export default function Home() {
         <AlignContainer>
           <SectionTitle title="People's Feedback about JobNow!" />
           {/* <SectionSubtitle subtitle=" Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore ex." /> */}
+          <FeedbackCard
+            subtitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore ex."
+            description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.Lorem ipsum dolor sit amet."
+            image="/images/green.png"
+            reviewer="Brown Garcia"
+            profession="Full Stack Developer in XReact Tech"
+          />
         </AlignContainer>
       </section>
+      <Footer />
     </>
   );
 }
