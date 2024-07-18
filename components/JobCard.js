@@ -3,7 +3,7 @@ import React from "react";
 const JobCard = (props) => {
   return (
     <div
-      className={`mt-12 flex cursor-pointer flex-col items-start justify-center gap-5 rounded-3xl px-4 py-8 text-center font-Poppins ${props.backgroundColor} ${props.width} `}
+      className={`flex cursor-pointer flex-col items-start justify-center gap-5 rounded-3xl px-6 py-8 text-center font-Poppins ${props.backgroundColor} ${props.width} `}
     >
       <div className="h-14 w-16 md:h-20 md:min-w-20">
         <img src={props.icon} />
@@ -12,7 +12,7 @@ const JobCard = (props) => {
         <h1 className="text-start font-Poppins text-[14px] font-semibold xs:text-xl">
           {props.title}
         </h1>
-        <h5 className="text-start font-semibold text-[#8A8A8A]">
+        <h5 className="mt-2 text-start font-Poppins font-semibold text-[#8A8A8A]">
           {props.subtitle}
         </h5>
       </div>
@@ -21,17 +21,17 @@ const JobCard = (props) => {
         <p>{props.description}</p>
       </div>
 
-      <div className="text-sx flex flex-row items-center gap-3 rounded-xl font-Poppins text-[10px] font-semibold md:text-sm">
-        <div className="flex flex-row items-center gap-1 rounded-lg bg-[#f9f9f9] px-2 py-2">
+      <div className="text-sx flex flex-row items-center gap-3 rounded-xl font-Poppins text-[10px] font-semibold xs:text-xs lg:text-sm">
+        <div className="flex flex-row items-center gap-2 rounded-lg bg-[#f9f9f9] px-2 py-2 md:gap-2 xl:gap-3">
           <div className="w-4">
             <img src="/icons/location.svg" />
           </div>
           <div>
-            <p>San Francisco,CA</p>
+            <p>San Francisco, CA</p>
           </div>
         </div>
         <div>
-          <div className="flex flex-row items-center gap-1 rounded-lg bg-[#f9f9f9] px-2 py-2">
+          <div className="flex flex-row items-center gap-2 rounded-lg bg-[#f9f9f9] px-2 py-2 md:gap-2 xl:gap-3">
             <div className="w-4">
               <img src="/icons/bag.svg" />
             </div>

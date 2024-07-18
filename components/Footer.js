@@ -5,7 +5,7 @@ const Footer = () => {
     <div className="flex flex-row">
       <div className="flex flex-col">
         <img src="/icons/logo.svg" className="h-10 w-48" />
-        <p>
+        <p className="w-9/12">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
           minim veniam.
@@ -17,10 +17,18 @@ const Footer = () => {
           <li>Address: 123 Fifth Avenue, New York - 1060,USA.</li>
           <li>Call Us: +(1600) 456 7890</li>
           <li>Email: yourid@example.com</li>
-          <li>Mon Sat</li>
+          <li>Mon Sat : 9:00 AM 19:00 PM </li>
         </ul>
       </div>
-      <div></div>
+      <div>
+        <h1>Pages</h1>
+        <ul>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+      </div>
       <div></div>
     </div>
   );

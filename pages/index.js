@@ -290,7 +290,7 @@ export default function Home() {
                           tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
                           veniam.Lorem ipsum dolor sit amet."
             aligntext="text-center"
-            padding="xl:px-56"
+            padding="xl:px-48"
             // fontSize="sm:text-3xl"
           />
           <Swiper
