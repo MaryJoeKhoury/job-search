@@ -16,32 +16,43 @@ import { Pagination, Navigation } from "swiper/modules";
 import JobCard from "@/components/JobCard";
 import FeedbackCard from "@/components/FeedbackCard";
 import Footer from "@/components/Footer";
+import Shield from "@/components/svgs/Shield";
+import Brain from "@/components/svgs/Brain";
+import Graph from "@/components/svgs/Graph";
+import Bank from "@/components/svgs/Bank";
+import Clock from "@/components/svgs/Clock";
+import Loading from "@/components/svgs/Loading";
+import Register from "@/components/svgs/Register";
+import Resume from "@/components/svgs/Resume";
+import SearchFolder from "@/components/svgs/SearchFolder";
+import ApplyJob from "@/components/svgs/ApplyJob";
+import SearchJob from "@/components/svgs/SearchJob";
 
 const howItWorksInfo = [
   {
     id: 1,
-    icon: "/icons/register.svg",
+    icon: <Register />,
     title: "Register",
     description:
       " Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.",
   },
   {
     id: 2,
-    icon: "/icons/resume.svg",
+    icon: <Resume />,
     title: "Create a Resume",
     description:
       " Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.",
   },
   {
     id: 3,
-    icon: "/icons/search-folder.svg",
+    icon: <SearchJob />,
     title: "Find Job",
     description:
       " Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.",
   },
   {
     id: 4,
-    icon: "/icons/apply-job.svg",
+    icon: <ApplyJob />,
     title: "Apply Job",
     description:
       " Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.",
@@ -51,43 +62,38 @@ const howItWorksInfo = [
 const jobCategoriesInfo = [
   {
     id: 1,
-    icon: "/icons/brain.svg",
+    icon: <Brain />,
     title: "Design and Developement",
     description: "350 Job Vacancy",
-    backgroundColor: "bg-green",
-    padding: "pt-4 pb-8 xs:pr-12",
+    padding: "pt-2 pb-5 xs:pr-12 pl-0",
   },
   {
     id: 2,
-    icon: "/icons/graph.svg",
+    icon: <Graph />,
     title: "Accounting and Finance",
     description: "350 Job Vacancy",
-    backgroundColor: "bg-white",
-    padding: "pt-4 pb-8 xs:pr-12",
+    padding: "pt-2 pb-5 md:pr-12 ",
   },
   {
     id: 3,
-    icon: "/icons/bank.svg",
+    icon: <Bank />,
     title: "Bank Institution",
     description: "350 Job Vacancy",
-    backgroundColor: "bg-white",
-    padding: "pt-4 pb-8 xs:pr-28",
+    padding: "pt-2 pb-5 xs:pr-28",
   },
   {
     id: 4,
-    icon: "/icons/clock.svg",
+    icon: <Clock />,
     title: "Product Management",
     description: "350 Job Vacancy",
-    backgroundColor: "bg-white",
-    padding: "pt-4 pb-8 xs:pr-12",
+    padding: "pt-2 pb-5 xs:pr-12",
   },
   {
     id: 5,
-    icon: "/icons/loading.svg",
+    icon: <Loading />,
     title: "Customer Support",
     description: "350 Job Vacancy",
-    backgroundColor: "bg-white",
-    padding: "pt-4 pb-8 xs:pr-20",
+    padding: "pt-2 pb-5 xs:pr-20",
   },
 ];
 
@@ -162,6 +168,8 @@ export default function Home() {
                 description={info.description}
                 backgroundColor="bg-white"
                 width="xl:w-1/4 lg:w-[30%]  md:w-2/5  w-full"
+                paddingWrap="pb-8 pl-8"
+                descriptionColor="text-[#8a8a8a]"
               />
             ))}
           </CardContainer>
@@ -199,13 +207,20 @@ export default function Home() {
             aligntext="text-center"
             // fontSize="sm:text-3xl"
           />
-          <SectionSubtitle
+          {/* <SectionSubtitle
             subtitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
                           tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
                           veniam.Lorem ipsum dolor sit amet."
             aligntext="text-center"
             padding="xl:px-48"
-          />
+          /> */}
+          <p
+            className={`mb-14 mt-8 text-center font-Poppins text-sm text-[#8A8A8A] lg:text-lg xl:px-48`}
+          >
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam.Lorem ipsum dolor sit amet.
+          </p>
           <Swiper
             // slidesPerView={4}
             // spaceBetween={20}
@@ -217,27 +232,27 @@ export default function Home() {
             breakpoints={{
               320: {
                 slidesPerView: 2.2,
-                spaceBetween: 10,
+                spaceBetween: 14,
               },
               480: {
-                slidesPerView: 2.1,
-                spaceBetween: 10,
+                slidesPerView: 1.8,
+                // spaceBetween: 30,
               },
               640: {
                 slidesPerView: 2.4,
-                spaceBetween: 70,
+                spaceBetween: 30,
               },
               768: {
-                slidesPerView: 2.6,
-                // spaceBetween: 260,
+                slidesPerView: 2.7,
+                spaceBetween: 0,
               },
               1024: {
-                slidesPerView: 3.2,
-                // spaceBetween: 260,
+                slidesPerView: 3.8,
+                spaceBetween: 190,
               },
               1280: {
-                slidesPerView: 4.1,
-                // spaceBetween: 250,
+                slidesPerView: 4.8,
+                spaceBetween: 190,
               },
             }}
           >
@@ -250,7 +265,11 @@ export default function Home() {
                     description={info.description}
                     padding={info.padding}
                     backgroundColor={info.backgroundColor}
-                    width="lg:w-[280px] md:w-[240px] xs:w-[210px] w-[140px]"
+                    paddingWrap="pb-6 lg:pl-8 pl-4"
+                    width="lg:w-[270px] md:w-[240px] xs:w-[210px] w-[140px]"
+                    hover="hover:bg-green hover:text-white"
+                    groupHover="group-hover:text-white"
+                    descriptionColor="text-[#888888] font-semibold"
                     // width="w-[280px]"
                   />
                 </SwiperSlide>
