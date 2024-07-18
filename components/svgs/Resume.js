@@ -1,11 +1,6 @@
 import * as React from "react";
 const Resume = (props) => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width={36.334}
-    height={44.16}
-    {...props}
-  >
+  <svg xmlns="http://www.w3.org/2000/svg" width={50} height={50} {...props}>
     <g data-name="Group 56">
       <path
         fill="none"

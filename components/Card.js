@@ -4,9 +4,9 @@ import Cards from "./Cards";
 export const Card = (props) => {
   return (
     <div
-      className={`group flex cursor-pointer flex-col items-start justify-center gap-4 rounded-3xl pr-8 pt-8 ${props.paddingWrap} bg-white text-center font-Poppins ${props.width} ${props.hover}`}
+      className={`group flex cursor-pointer flex-col items-start justify-center gap-4 rounded-3xl pr-8 pt-8 ${props.paddingWrap} bg-white text-center font-Poppins ${props.width} ${props.hover} hover:duration-500`}
     >
-      <div className="w-7 md:w-10">
+      <div className="h-full w-full md:w-full">
         {/* <img src={props.icon} className="group-hover:bg-red-50" /> */}
         {props.icon}
       </div>

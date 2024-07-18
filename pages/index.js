@@ -65,35 +65,35 @@ const jobCategoriesInfo = [
     icon: <Brain />,
     title: "Design and Developement",
     description: "350 Job Vacancy",
-    padding: "pt-2 pb-5 xs:pr-12 pl-0",
+    padding: "pt-4 pb-5 pr-12 pl-0",
   },
   {
     id: 2,
     icon: <Graph />,
     title: "Accounting and Finance",
     description: "350 Job Vacancy",
-    padding: "pt-2 pb-5 md:pr-12 ",
+    padding: "pt-4 pb-5 pr-16 pr-20",
   },
   {
     id: 3,
     icon: <Bank />,
     title: "Bank Institution",
     description: "350 Job Vacancy",
-    padding: "pt-2 pb-5 xs:pr-28",
+    padding: "pt-4 pb-5 pr-28",
   },
   {
     id: 4,
     icon: <Clock />,
     title: "Product Management",
     description: "350 Job Vacancy",
-    padding: "pt-2 pb-5 xs:pr-12",
+    padding: "pt-4 pb-5 pr-12",
   },
   {
     id: 5,
     icon: <Loading />,
     title: "Customer Support",
     description: "350 Job Vacancy",
-    padding: "pt-2 pb-5 xs:pr-20",
+    padding: "pt-4 pb-5 pr-20",
   },
 ];
 
@@ -231,19 +231,19 @@ export default function Home() {
             className="mySwiper"
             breakpoints={{
               320: {
-                slidesPerView: 2.2,
+                slidesPerView: 1.3,
                 spaceBetween: 14,
               },
               480: {
-                slidesPerView: 1.8,
+                slidesPerView: 1.4,
                 // spaceBetween: 30,
               },
               640: {
-                slidesPerView: 2.4,
+                slidesPerView: 2.2,
                 spaceBetween: 30,
               },
               768: {
-                slidesPerView: 2.7,
+                slidesPerView: 2.4,
                 spaceBetween: 0,
               },
               1024: {
@@ -266,9 +266,9 @@ export default function Home() {
                     padding={info.padding}
                     backgroundColor={info.backgroundColor}
                     paddingWrap="pb-6 lg:pl-8 pl-4"
-                    width="lg:w-[270px] md:w-[240px] xs:w-[210px] w-[140px]"
-                    hover="hover:bg-green hover:text-white"
-                    groupHover="group-hover:text-white"
+                    width="lg:w-[270px] md:w-[260px] sm:w-[260px] w-[220px] xs:w-[280px]"
+                    hover="hover:bg-green hover:text-white  hover:duration-500"
+                    groupHover="group-hover:text-white  group-hover:duration-500"
                     descriptionColor="text-[#888888] font-semibold"
                     // width="w-[280px]"
                   />

@@ -11,7 +11,15 @@ const Footer = () => {
           minim veniam.
         </p>
       </div>
-      <div></div>
+      <div>
+        <h1>Company</h1>
+        <ul>
+          <li>Address: 123 Fifth Avenue, New York - 1060,USA.</li>
+          <li>Call Us: +(1600) 456 7890</li>
+          <li>Email: yourid@example.com</li>
+          <li>Mon Sat</li>
+        </ul>
+      </div>
       <div></div>
       <div></div>
     </div>

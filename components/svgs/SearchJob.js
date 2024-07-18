@@ -1,11 +1,6 @@
 import * as React from "react";
 const SearchJob = (props) => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width={47.5}
-    height={52.24}
-    {...props}
-  >
+  <svg xmlns="http://www.w3.org/2000/svg" width={50} height={50} {...props}>
     <g fill="#0c9" data-name="Group 60">
       <path
         d="M4.75 9.5H9.5v7.12h23.75V9.5H38v11.87h4.75V9.5A4.768 4.768 0 0 0 38 4.74h-9.925a7.1 7.1 0 0 0-13.394 0H4.753A4.768 4.768 0 0 0 .003 9.5v33.24a4.768 4.768 0 0 0 4.75 4.76h11.872v-4.76H4.75Zm16.625-4.76A2.38 2.38 0 1 1 19 7.12a2.384 2.384 0 0 1 2.375-2.38Z"
