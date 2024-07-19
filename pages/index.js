@@ -156,7 +156,12 @@ export default function Home() {
                 />
               </div>
               <div className="hidden md:block">
-                <Button content="Learn More" />
+                <Button
+                  content="Learn More"
+                  borderColor="border-[#00CC99]"
+                  textColor="text-[#00CC99]"
+                  fillColor="fill-[#0c9]"
+                />
               </div>
             </div>
           </div>
@@ -174,7 +179,12 @@ export default function Home() {
             ))}
           </CardContainer>
           <div className="mx-auto mt-8 block w-fit md:hidden">
-            <Button content="Learn More" />
+            <Button
+              content="Learn More"
+              borderColor="border-[#00CC99]"
+              textColor="text-[#00CC99]"
+              fillColor="fill-[#0c9]"
+            />
           </div>
           <div className="mt-12 flex flex-col items-center gap-16 md:mt-36 md:flex-row">
             <div className="w-fit">
@@ -194,7 +204,12 @@ export default function Home() {
                 eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
                 enim ad minim veniam.
               </p>
-              <Button content="Learn More" />
+              <Button
+                content="Learn More"
+                borderColor="border-[#00CC99]"
+                textColor="text-[#00CC99]"
+                fillColor="fill-[#0c9]"
+              />
             </div>
           </div>
         </AlignContainer>
@@ -277,7 +292,12 @@ export default function Home() {
             </CardContainer>
           </Swiper>
           <div className="m-auto mt-12 block w-fit">
-            <Button content="View More" />
+            <Button
+              content="View More"
+              borderColor="border-[#00CC99]"
+              textColor="text-[#00CC99]"
+              fillColor="fill-[#0c9]"
+            />
           </div>
         </AlignContainer>
       </section>
@@ -345,12 +365,17 @@ export default function Home() {
             </CardContainer>
           </Swiper>
           <div className="m-auto mt-12 w-fit">
-            <Button content="View More" />
+            <Button
+              content="View More"
+              borderColor="border-[#00CC99]"
+              textColor="text-[#00CC99]"
+              fillColor="fill-[#0c9]"
+            />
           </div>
         </AlignContainer>
       </section>
 
-      <section className="bg-[#fbfbfb] pt-16">
+      <section className="bg-[#fbfbfb] pb-96 pt-16">
         <AlignContainer>
           <SectionTitle title="People's Feedback about JobNow!" />
           {/* <SectionSubtitle subtitle=" Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore ex." /> */}
@@ -363,7 +388,31 @@ export default function Home() {
           />
         </AlignContainer>
       </section>
-      <Footer />
+
+      <AlignContainer>
+        <section className="relative">
+          <div className="absolute -top-48 z-10 rounded-[20px] bg-[#003A2C] pb-12 pt-16">
+            <h1
+              className={`text-center font-Poppins text-2xl font-semibold text-white sm:text-4xl`}
+            >
+              Register your CV now!
+            </h1>
+            <p className="mb-8 mt-10 px-4 text-center font-Poppins text-sm text-[#AAAAAA] xs:px-8 sm:px-20 md:px-28 md:text-lg lg:px-40 xl:px-72">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis
+              eiusmod tempor incididunt ut labore et dolore ex.
+            </p>
+            <div className="m-auto w-fit">
+              <Button
+                content="Register Now"
+                borderColor="border-white"
+                textColor="text-white"
+                fillColor="fill-white"
+              />
+            </div>
+          </div>
+        </section>
+      </AlignContainer>
+      <Footer position="relative" />
     </>
   );
 }
