@@ -302,7 +302,7 @@ export default function Home() {
         </AlignContainer>
       </section>
 
-      <section className="bg-[#FBFBFB] pb-16 pt-36">
+      <section className="text bg-[#FBFBFB] pb-16 pt-36">
         <AlignContainer>
           <SectionTitle title="Recently Added" aligntext="text-center" />
           <SectionSubtitle
@@ -377,11 +377,14 @@ export default function Home() {
 
       <section className="bg-[#fbfbfb] pb-96 pt-16">
         <AlignContainer>
-          <SectionTitle title="People's Feedback about JobNow!" />
+          <SectionTitle
+            title="People's Feedback about JobNow!"
+            fontSize="lg:text-[2.125rem]"
+          />
           {/* <SectionSubtitle subtitle=" Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore ex." /> */}
           <FeedbackCard
-            subtitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore ex."
-            description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.Lorem ipsum dolor sit amet."
+            subtitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed equis eiusmod tempor incididunt ut labore et dolore ex."
+            description='"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.Lorem ipsum dolor sit amet."'
             image="/images/green.png"
             reviewer="Brown Garcia"
             profession="Full Stack Developer in XReact Tech"
