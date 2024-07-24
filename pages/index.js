@@ -394,13 +394,13 @@ export default function Home() {
 
       <AlignContainer>
         <section className="relative">
-          <div className="absolute -top-48 z-10 rounded-[20px] bg-[#003A2C] pb-12 pt-16">
+          <div className="absolute -top-48 z-10 rounded-[20px] bg-[#003A2C] pb-12 pt-12">
             <h1
-              className={`text-center font-Poppins text-2xl font-semibold text-white sm:text-4xl`}
+              className={`text-center font-Poppins text-2xl font-semibold text-white sm:text-4xl lg:text-3xl`}
             >
               Register your CV now!
             </h1>
-            <p className="mb-8 mt-10 px-4 text-center font-Poppins text-sm text-[#AAAAAA] xs:px-8 sm:px-20 md:px-28 md:text-lg lg:px-40 xl:px-72">
+            <p className="mb-6 mt-6 px-4 text-center font-Poppins text-sm text-[#AAAAAA] xs:px-8 sm:px-20 md:px-28 md:text-lg lg:px-40 xl:px-72">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis
               eiusmod tempor incididunt ut labore et dolore ex.
             </p>
