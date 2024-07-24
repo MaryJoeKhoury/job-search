@@ -375,16 +375,17 @@ export default function Home() {
         </AlignContainer>
       </section>
 
-      <section className="bg-[#fbfbfb] pb-96 pt-16">
+      <section className="bg-[#fbfbfb] pb-96 pt-24">
         <AlignContainer>
           <SectionTitle
             title="People's Feedback about JobNow!"
-            fontSize="lg:text-[2.125rem]"
+            fontSize="md:text-[2.125rem] sm:text-[1.75rem] "
+            aligntext="md:text-left text-center"
           />
           {/* <SectionSubtitle subtitle=" Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore ex." /> */}
           <FeedbackCard
-            subtitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed equis eiusmod tempor incididunt ut labore et dolore ex."
-            description='"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.Lorem ipsum dolor sit amet."'
+            subtitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis lacus non orci euismod vestibulum vitae ut ex."
+            description='"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis lacus non orci euismod vestibulum vitae ut ex. Quisque ut arcu at lectus tristique auctor sit amet at turpis."'
             image="/images/green.png"
             reviewer="Brown Garcia"
             profession="Full Stack Developer in XReact Tech"
@@ -396,7 +397,7 @@ export default function Home() {
         <section className="relative">
           <div className="absolute -top-48 z-10 rounded-[20px] bg-[#003A2C] pb-12 pt-12">
             <h1
-              className={`text-center font-Poppins text-2xl font-semibold text-white sm:text-4xl lg:text-3xl`}
+              className={`text-center font-Poppins text-2xl font-semibold text-white md:text-4xl lg:text-3xl`}
             >
               Register your CV now!
             </h1>

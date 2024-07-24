@@ -86,10 +86,10 @@ const Footer = (props) => {
                 <Facebook />
               </a>
               <a href="#" className="hover:p-2 hover:duration-200">
-                <img src="/icons/twitter.svg" />
+                <img src="/icons/twitter.svg" className="h-6 w-6" />
               </a>
               <a href="#" className="hover:p-2 hover:duration-200">
-                <img src="/icons/linkedin.svg" />
+                <img src="/icons/linkedin.svg" className="h-6 w-6" />
               </a>
             </div>
           </div>
