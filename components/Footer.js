@@ -79,17 +79,29 @@ const Footer = (props) => {
           <div>
             <h1 className="mb-4 text-2xl font-bold text-white">Contact Us</h1>
             <div className="flex flex-row gap-5">
-              <a href="#" className="hover:p-2 hover:duration-200">
-                <Google />
+              <a href="#" className="group hover:duration-200">
+                <img
+                  src="/icons/google.svg"
+                  className="h-6 w-6 hover:duration-200 group-hover:h-10 group-hover:w-10"
+                />
               </a>
-              <a href="#" className="hover:p-2 hover:duration-200">
-                <Facebook />
+              <a href="#" className="group hover:duration-200">
+                <img
+                  src="/icons/facebook.svg"
+                  className="h-6 w-6 hover:duration-200 group-hover:h-10 group-hover:w-10"
+                />
               </a>
-              <a href="#" className="hover:p-2 hover:duration-200">
-                <img src="/icons/twitter.svg" className="h-6 w-6" />
+              <a href="#" className="group hover:duration-200">
+                <img
+                  src="/icons/twitter.svg"
+                  className="h-6 w-6 hover:duration-200 group-hover:h-10 group-hover:w-10"
+                />
               </a>
-              <a href="#" className="hover:p-2 hover:duration-200">
-                <img src="/icons/linkedin.svg" className="h-6 w-6" />
+              <a href="#" className="group hover:duration-200">
+                <img
+                  src="/icons/linkedin.svg"
+                  className="h-6 w-6 hover:duration-200 group-hover:h-10 group-hover:w-10"
+                />
               </a>
             </div>
           </div>
