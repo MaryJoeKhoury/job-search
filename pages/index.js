@@ -97,6 +97,37 @@ const jobCategoriesInfo = [
   },
 ];
 
+const feedbacks = [
+  {
+    subtitle:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis lacus non orci euismod vestibulum vitae ut ex.",
+    description:
+      '"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis lacus non orci euismod vestibulum vitae ut ex. Quisque ut arcu at lectus tristique auctor sit amet at turpis."',
+    image: "/images/green.png",
+
+    reviewer: "Brown Garcia",
+    profession: "Full Stack Developer in XReact Tech",
+  },
+  {
+    subtitle:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis lacus non orci euismod vestibulum vitae ut ex.",
+    description: '"WOW"',
+    image: "/images/grey.png",
+
+    reviewer: "Mary Joe",
+    profession: "Front End Developer in XReact Tech",
+  },
+  {
+    subtitle:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis lacus non orci euismod vestibulum vitae ut ex.",
+    description: '"WOW"',
+    image: "/images/grey.png",
+
+    reviewer: "Joe",
+    profession: "Front End Developer in XReact Tech",
+  },
+];
+
 const jobInfo = [
   {
     id: 1,
@@ -384,12 +415,13 @@ export default function Home() {
           />
           {/* <SectionSubtitle subtitle=" Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore ex." /> */}
           <FeedbackCard
-            subtitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis lacus non orci euismod vestibulum vitae ut ex."
-            description='"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis lacus non orci euismod vestibulum vitae ut ex. Quisque ut arcu at lectus tristique auctor sit amet at turpis."'
-            image="/images/green.png"
-            reviewer="Brown Garcia"
-            profession="Full Stack Developer in XReact Tech"
+          // subtitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis lacus non orci euismod vestibulum vitae ut ex."
+          // description='"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis lacus non orci euismod vestibulum vitae ut ex. Quisque ut arcu at lectus tristique auctor sit amet at turpis."'
+          // image="/images/green.png"
+          // reviewer="Brown Garcia"
+          // profession="Full Stack Developer in XReact Tech"
           />
+          <FeedbackCard feedbacks={feedbacks} />
         </AlignContainer>
       </section>
 
