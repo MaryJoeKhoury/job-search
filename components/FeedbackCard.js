@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import BackwardForward from "./svgs/BackwardForward";
 
 const FeedbackCard = (props) => {
   const { feedbacks = [] } = props;
@@ -32,7 +33,10 @@ const FeedbackCard = (props) => {
               {currentFeedback.description}
             </p>
 
-            <img src={currentFeedback.image} className="block md:hidden" />
+            <img
+              src={currentFeedback.image}
+              className="m-auto block w-8/12 md:hidden"
+            />
 
             <div>
               <h3 className="mb-3 text-center text-xl font-semibold md:text-left">
@@ -44,17 +48,17 @@ const FeedbackCard = (props) => {
             </div>
           </div>
           <div className="ml-1 mt-6 flex flex-row justify-center gap-6 md:justify-normal">
-            <button onClick={handleBackwardButton}>
-              <img src="/icons/backward-button.svg" className="h-12 w-12" />
+            <button onClick={handleBackwardButton} className="group">
+              <BackwardForward />
             </button>
-            <button onClick={handleForwardButton}>
-              <img src="/icons/forward-button.svg" className="h-12 w-12" />
+            <button onClick={handleForwardButton} className="group">
+              <BackwardForward className="rotate-180" />
             </button>
           </div>
         </div>
 
         <div className="hidden md:flex">
-          <img src={currentFeedback.image} className="h-[90%] w-full" />
+          <img src={currentFeedback.image} className="w-full xl:h-[90%]" />
         </div>
       </div>
     </>

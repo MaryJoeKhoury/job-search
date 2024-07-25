@@ -97,7 +97,7 @@ const jobCategoriesInfo = [
   },
 ];
 
-const feedbacks = [
+const feedbackInfo = [
   {
     subtitle:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis lacus non orci euismod vestibulum vitae ut ex.",
@@ -161,7 +161,6 @@ const jobInfo = [
   },
 ];
 
-const feedbackInfo = [];
 export default function Home() {
   const [swiperRef, setSwiperRef] = useState(null);
 
@@ -406,7 +405,7 @@ export default function Home() {
         </AlignContainer>
       </section>
 
-      <section className="bg-[#fbfbfb] pb-96 pt-24">
+      <section className="bg-[#fbfbfb] pb-80 pt-8 md:pt-24">
         <AlignContainer>
           <SectionTitle
             title="People's Feedback about JobNow!"
@@ -421,7 +420,7 @@ export default function Home() {
           // reviewer="Brown Garcia"
           // profession="Full Stack Developer in XReact Tech"
           />
-          <FeedbackCard feedbacks={feedbacks} />
+          <FeedbackCard feedbacks={feedbackInfo} />
         </AlignContainer>
       </section>
 
