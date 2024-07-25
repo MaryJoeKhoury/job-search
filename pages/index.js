@@ -167,7 +167,7 @@ export default function Home() {
   return (
     <>
       <HeroArea />
-      <section className="bg-[#fbfbfb] pb-28">
+      <section className="bg-[#fbfbfb] pb-20 md:pb-28">
         <AlignContainer>
           <div className="pt-28 md:pt-40">
             <div className="flex flex-col items-center justify-between md:flex-row">
@@ -245,7 +245,7 @@ export default function Home() {
         </AlignContainer>
       </section>
 
-      <section className="bg-[#00CC99] bg-opacity-5 py-28">
+      <section className="bg-[#00CC99] bg-opacity-5 py-14 md:py-28">
         <AlignContainer>
           <SectionTitle
             title="Popular Job Categories"
@@ -332,9 +332,9 @@ export default function Home() {
         </AlignContainer>
       </section>
 
-      <section className="text bg-[#FBFBFB] pb-16 pt-36">
+      <section className="text bg-[#FBFBFB] pb-16 pt-20 md:pt-36">
         <AlignContainer>
-          <SectionTitle title="Recently Added" aligntext="text-center" />
+          <SectionTitle title="Recently Added Jobs" aligntext="text-center" />
           <SectionSubtitle
             subtitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
                           tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
